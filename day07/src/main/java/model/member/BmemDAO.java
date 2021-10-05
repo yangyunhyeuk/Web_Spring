@@ -1,4 +1,4 @@
-package model.board;
+package model.member;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,7 +26,7 @@ public class BmemDAO {
 	private final String getBmemListSQL="select * from bmember";
 
 
-	public void insertBoard(BmemVO vo) {
+	public void insertMember(BmemVO vo) {
 		System.out.println("dao로 insert");
 		try {
 			conn=JDBC.getConnection();
@@ -43,7 +43,7 @@ public class BmemDAO {
 			JDBC.close(conn, pstmt);
 		}
 	}
-	public void updateBoard(BmemVO vo) {
+	public void updateMember(BmemVO vo) {
 		System.out.println("dao로 update");
 		try {
 			conn=JDBC.getConnection();
@@ -60,7 +60,7 @@ public class BmemDAO {
 			JDBC.close(conn, pstmt);
 		}
 	}
-	public void deleteBoard(BmemVO vo) {
+	public void deleteMember(BmemVO vo) {
 		System.out.println("dao로 delete");
 		try {
 			conn=JDBC.getConnection();
@@ -74,7 +74,7 @@ public class BmemDAO {
 			JDBC.close(conn, pstmt);
 		}
 	}
-	public List<BmemVO> getBoardList(BmemVO vo) {
+	public List<BmemVO> getMemberList(BmemVO vo) {
 		System.out.println("dao로 getList");
 		List<BmemVO> datas=new ArrayList<BmemVO>();
 		try {
@@ -84,9 +84,9 @@ public class BmemDAO {
 			while(rs.next()) {
 				BmemVO data=new BmemVO();
 				data.setId(rs.getString("id"));
-				data.setPassword(rs.getString("title"));
-				data.setName(rs.getString("writer"));
-				data.setRole(rs.getString("content"));
+				data.setPassword(rs.getString("password"));
+				data.setName(rs.getString("name"));
+				data.setRole(rs.getString("role"));
 				datas.add(data);
 			}
 		} catch (SQLException e) {
@@ -97,7 +97,9 @@ public class BmemDAO {
 		}
 		return datas;
 	}
-	public BmemVO getBoard(BmemVO vo) {
+	public BmemVO getMember(BmemVO vo) {
+		// 로그인이 성공한다면 MemVO 객체가 리턴
+		// 실패한다면 리턴 값이 NULL
 		System.out.println("dao로 get");
 		BmemVO data=null;
 		try {
@@ -108,9 +110,9 @@ public class BmemDAO {
 			if(rs.next()) {
 				data=new BmemVO();
 				data.setId(rs.getString("id"));
-				data.setPassword(rs.getString("title"));
-				data.setName(rs.getString("writer"));
-				data.setRole(rs.getString("content"));
+				data.setPassword(rs.getString("password"));
+				data.setName(rs.getString("name"));
+				data.setRole(rs.getString("role"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -4,10 +4,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean class="singer.BlackPink" id="playsong">
-		<constructor-arg ref="hitmanbang"></constructor-arg>
+		<constructor-arg ref="yg"></constructor-arg>
 	</bean>
 
 	<bean class="singer.HitmanBang" id="hitmanbang" />
-	<bean class="singer.Yg" id="yg" scope="prototype" />
+	<bean class="singer.Yg" id="yg" />
 
 </beans>
+

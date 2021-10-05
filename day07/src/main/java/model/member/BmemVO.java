@@ -1,4 +1,4 @@
-package model.board;
+package model.member;
 
 public class BmemVO {
 //	id varchar(15) primary key,
@@ -41,6 +41,11 @@ public class BmemVO {
 
 	public void setRole(String role) {
 		this.role = role;
+	}
+
+	@Override
+	public String toString() {
+		return "BmemVO [id=" + id + ", password=" + password + ", name=" + name + ", role=" + role + "]";
 	}
 
 }
