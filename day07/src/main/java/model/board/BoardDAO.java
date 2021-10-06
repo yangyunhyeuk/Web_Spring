@@ -13,7 +13,6 @@ import model.common.JDBC;
 
 // DAO-> 드라이버, CP, MyBatis, JPA, ...
 // Service에서 DAO객체를 이용하여 CRUD기능을 제공할 예정!
-// 폰Service <-> 시계DAO
 @Repository("boardDAO")
 public class BoardDAO {
 

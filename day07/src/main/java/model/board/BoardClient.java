@@ -13,8 +13,8 @@ public class BoardClient {
 
 		BoardService bs = (BoardService) factory.getBean("boardService");
 		BoardVO vo = new BoardVO();
-		//vo.setContent("내용 작성중~~");
-		//vo.setTitle("제목입니다!");
+		//vo.setContent("내용 작성중");
+		//vo.setTitle("제목입니다");
 		//vo.setWriter("관리자");
 
 		//bs.insertBoard(vo);
