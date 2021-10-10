@@ -27,7 +27,6 @@ public class BoardDAO {
 	private final String getBoardListSQL="select * from board order by id desc";
 
 	public void insertBoard(BoardVO vo) {
-		System.out.println("dao로 insert");
 		try {
 			conn=JDBC.getConnection();
 			pstmt=conn.prepareStatement(insertSQL);
@@ -43,7 +42,6 @@ public class BoardDAO {
 		}
 	}
 	public void updateBoard(BoardVO vo) {
-		System.out.println("dao로 update");
 		try {
 			conn=JDBC.getConnection();
 			pstmt=conn.prepareStatement(updateSQL);
@@ -59,7 +57,6 @@ public class BoardDAO {
 		}
 	}
 	public void deleteBoard(BoardVO vo) {
-		System.out.println("dao로 delete");
 		try {
 			conn=JDBC.getConnection();
 			pstmt=conn.prepareStatement(deleteSQL);
@@ -73,7 +70,6 @@ public class BoardDAO {
 		}
 	}
 	public List<BoardVO> getBoardList(BoardVO vo) {
-		System.out.println("dao로 getList");
 		List<BoardVO> datas=new ArrayList<BoardVO>();
 		try {
 			conn=JDBC.getConnection();
@@ -97,7 +93,6 @@ public class BoardDAO {
 		return datas;
 	}
 	public BoardVO getBoard(BoardVO vo) {
-		System.out.println("dao로 get");
 		BoardVO data=null;
 		try {
 			conn=JDBC.getConnection();

@@ -11,8 +11,7 @@ import model.board.BoardVO;
 public class BmemServiceImpl implements BmemService {
 
 	@Autowired
-	private BmemDAO memberDAO;
-	private BmemVO memberVO;
+	private SpringBmemDAO memberDAO;
 
 	@Override
 	public void insertMember(BmemVO vo) {

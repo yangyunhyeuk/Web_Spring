@@ -13,11 +13,16 @@ public class BoardServiceImpl implements BoardService {
 	
 	
 	@Autowired
-	private BoardDAO boardDAO;
-
+	private SpringBoardDAO boardDAO;
+	// 
 	
 	@Override
 	public void insertBoard(BoardVO vo) {
+	/*	if(vo.getId() == 0) {
+			throw new IllegalArgumentException("pk 값 : 0  불가");
+			// 실행 시에 발생하는 예외
+			// 런타임 에러
+		}*/
 		boardDAO.insertBoard(vo);
 	}
 

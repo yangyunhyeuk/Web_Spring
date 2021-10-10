@@ -20,4 +20,5 @@ insert into bmember values('admin','1234','包府磊','ADMIN');
 select * from bmember;
 insert into board (id,title,writer,content) values(1,'力格','辫揪','臂 郴侩');
 select * from board;
+drop table board;
 

@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/yang/app/common/AfterAdvice.java=UTF-8
+encoding//src/main/java/com/yang/app/common/AfterReturningAdvice.java=UTF-8
+encoding//src/main/java/com/yang/app/common/AfterThrowingAdvice.java=UTF-8
+encoding//src/main/java/com/yang/app/common/AroundAdvice.java=UTF-8
+encoding//src/main/java/com/yang/app/common/LogAdvice.java=UTF-8
+encoding//src/main/java/com/yang/app/common/LogPlusAdvice.java=UTF-8
+encoding//src/main/java/com/yang/app/common/PointcutCommon.java=UTF-8

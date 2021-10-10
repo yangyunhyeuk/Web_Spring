@@ -2,8 +2,6 @@ package com.yang.app.common;
 
 public class LogPlusAdvice {
 	public void printPlusLog() {
-		System.out.println("¾÷±×·¹ÀÌµåµÈ ·Î±×");
-		// ³ôÀº ÀÀÁıµµ
-		// º¯°æÇÏ°í ½ÍÀ» ¶§ ¿©±â¼­ ¸àÆ®°¡ ¹Ù²Ù¸é µÈ´Ù.
+		System.out.println("ì—…ê·¸ë ˆì´ë“œëœ ë¡œê·¸");
 	}
 }

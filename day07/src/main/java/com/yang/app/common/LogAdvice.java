@@ -1,13 +1,21 @@
 package com.yang.app.common;
 
-// ·Î±ëÃ³¸®¸¦ ÇÒ ¶§ ÇØ´ç ÆÄÀÏÀ» »ç¿ëÇÑ´Ù. 
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Service;
 
+@Service
+@Aspect
 public class LogAdvice {
-	
+	@Pointcut("execution(* model.board.*Impl.get*(..))")
+	public void aPointcut() {}
+	@Before("PointcutCommon.aPointcut()")
 	public void printLog() {
-		System.out.println("ºñÁî´Ï½º¸Ş¼­µå¸¦ ¼öÇàÇÏ±â Àü¿¡ Ãâ·ÂµÇ´Â ·Î±×");
+		System.out.println("ë¹„ì¦ˆë‹ˆìŠ¤ ë©”ì„œë“œë¥¼ ìˆ˜í–‰í•˜ê¸° ì „ì— ì¶œë ¥ë˜ëŠ” ë¡œê·¸!!!");
+		// ì‘ì§‘ë„ê°€ ë†’ë‹¤!
 	}
-
 }
-
-
+// 1. get*()ìˆ˜í–‰ì‹œì—ë§Œ
+// 2. í•´ë‹¹ í•µì‹¬ê´€ì‹¬ ì´ì „ì— ìˆ˜í–‰ë ìˆ˜ìˆë„ë¡
+// 3. LogAdviceì˜ printLog()ê°€
