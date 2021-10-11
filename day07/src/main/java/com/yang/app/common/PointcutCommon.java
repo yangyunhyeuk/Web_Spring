@@ -16,7 +16,7 @@ public class PointcutCommon {
 	public void bPointcut() {}
 	
 	@Pointcut("execution(* model.member.*Impl.get*(..))")
-	public void cPointcut() {}
+	public void cPointcut() {}  
 	
 	@Pointcut("execution(* model.member.*Impl.*(..))")
 	public void dPointcut() {}

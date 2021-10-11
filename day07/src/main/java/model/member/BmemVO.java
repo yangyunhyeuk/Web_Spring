@@ -1,4 +1,4 @@
-package model.member;
+  package model.member;
 
 public class BmemVO {
 //	id varchar(15) primary key,

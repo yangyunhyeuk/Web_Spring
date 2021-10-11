@@ -2,7 +2,7 @@ package com.yang.app.common;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.util.StopWatch;
-
+ 
 public class AroundAdvice {
 	public Object printLog(ProceedingJoinPoint pjp) throws Throwable{
 		System.out.println("pjp인자를 갖는 메서드에서 출력하는 문구 -1");

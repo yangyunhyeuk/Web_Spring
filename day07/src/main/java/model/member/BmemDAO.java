@@ -13,7 +13,7 @@ import model.common.JDBC;
 
 @Repository("bmemDAO")
 public class BmemDAO {
-
+  
 	private Connection conn;
 	private PreparedStatement pstmt;
 	private ResultSet rs;

@@ -1,4 +1,4 @@
-package model.member;
+   package model.member;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
