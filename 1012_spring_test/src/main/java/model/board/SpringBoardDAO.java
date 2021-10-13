@@ -25,7 +25,7 @@ class BoardRowMapper implements RowMapper<BoardVO> {
 
 }
 
-// 실제 DB와 연괸된 파일이다.  
+// 실제 DB와 연관된 파일이다.  
 // ServiceImpl에서 사용할 예정이다. 
 @Repository()
 public class SpringBoardDAO {

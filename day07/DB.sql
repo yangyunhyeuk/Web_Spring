@@ -22,3 +22,7 @@ insert into board (id,title,writer,content) values(1,'Á¦¸ñ','±è¾¾','±Û ³»¿ë');
 select * from board;
 drop table board;
 
+
+
+SELECT * FROM MEMBER WHERE id = '1' AND password = '2'
+

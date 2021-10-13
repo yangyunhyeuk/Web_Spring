@@ -18,7 +18,7 @@ public class Client {
 		AbstractApplicationContext factory = new GenericXmlApplicationContext("applicationContext.xml");
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+/*
 		BoardService bs = (BoardService) factory.getBean("boardService");
 		BoardVO bvo = new BoardVO();
 
@@ -64,13 +64,13 @@ public class Client {
 		System.out.println();
 		System.out.println();
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+*/
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// 회원가입 // 회원가입 // 회원가입 // 회원가입 // 회원가입 // 회원가입
 		MemberService ms = (MemberService) factory.getBean("memberService");
 		MemberVO mvo = new MemberVO();
 
-		mvo.setId("rexa");
+		mvo.setId("lee");
 		mvo.setPassword("1234");
 		mvo.setName("call");
 		mvo.setRole("trainer");
@@ -78,7 +78,7 @@ public class Client {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// 로그인 // 로그인 // 로그인 // 로그인 // 로그인 // 로그인
-
+/*
 		mvo.setId("1");
 		mvo.setPassword("4");
 
@@ -92,7 +92,7 @@ public class Client {
 		for (MemberVO s : mdatas) {
 			System.out.println("List<MemberVO> mdatas = ms.getMember(mvo) : "+s);
 		}
-
+*/
 		factory.close();
 
 	}

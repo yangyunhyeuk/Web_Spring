@@ -15,7 +15,6 @@ public class BoardServiceImpl implements BoardService {
 	@Autowired
 	private SpringBoardDAO boardDAO;
 	// 
-	
 	@Override
 	public void insertBoard(BoardVO vo) {
 	/*	if(vo.getId() == 0) {
@@ -45,5 +44,12 @@ public class BoardServiceImpl implements BoardService {
 	public BoardVO getBoard(BoardVO vo) {
 		return boardDAO.getBoard(vo);
 	}
+
+	@Override
+	public List<BoardVO> getSearchList(String title) {
+		return boardDAO.getSearchList(title);
+	}
+
+	
 
 }

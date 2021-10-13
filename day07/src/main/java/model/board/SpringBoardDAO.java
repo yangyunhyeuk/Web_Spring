@@ -77,6 +77,11 @@ public class SpringBoardDAO {
 	      return jdbcTemplate.queryForObject(getBoardSQL,args,new BoardRowMapper());
 	   }
 
+	public List<BoardVO> getSearchList(String title) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 		// BoardRowMapper는 외부에 따로 빼놓는다 
 		// 최상단 확인
 	

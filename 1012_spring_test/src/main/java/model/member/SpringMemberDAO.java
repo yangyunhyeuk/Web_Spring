@@ -53,6 +53,12 @@ public class SpringMemberDAO {
 		jdbcTemplate.update(deleteSQL, vo.getId());
 	}
 
+	/*public List<MemberVO> getMember(MemberVO vo) {
+		System.out.println("getMember 작업 시작");
+		Object[] args = { vo.getId(), vo.getPassword() };
+		return jdbcTemplate.query(getMember, args, new MemberRowMapper());
+
+	}*/
 	public List<MemberVO> getMember(MemberVO vo) {
 		System.out.println("getMember 작업 시작");
 		Object[] args = { vo.getId(), vo.getPassword() };
