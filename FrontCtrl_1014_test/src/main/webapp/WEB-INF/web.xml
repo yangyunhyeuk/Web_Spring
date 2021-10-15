@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <!-- <servlet>
+    <servlet-name>ds</servlet-name>
+    <servlet-class>DispatcherServlet.common.FrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fc</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping> -->
+  <context-param>
+    <param-name>encoding</param-name>
+    <param-value>UTF-8</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>DispatcherServlet</display-name>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <servlet-class>controller.common.DispatcherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+</web-app>
