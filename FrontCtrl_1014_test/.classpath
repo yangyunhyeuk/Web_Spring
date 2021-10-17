@@ -31,5 +31,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/YANG_0622/resource/오라클DB드라이버/ojdbc6.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

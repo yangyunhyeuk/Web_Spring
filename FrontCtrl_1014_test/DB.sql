@@ -3,6 +3,7 @@ select * from all_tables;
 drop table board;
 drop table member;
 
+
 select * from member;
 select * from board;
 
@@ -29,7 +30,46 @@ create table member(
 insert into member values('hana','11','하나','USER');
 insert into member values('dool','22','두울','ADMIN');
 
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+insert into board (id,title,writer,content) values((SELECT NVL(MAX(id),0)+1 FROM board),'제목1','작자2','내용3');
+
 insert into board (id,title,writer,content) values(1,'����','�达','�� ����');
+
+ 
 
 delete from board where title='�����Դϴ�!';
 

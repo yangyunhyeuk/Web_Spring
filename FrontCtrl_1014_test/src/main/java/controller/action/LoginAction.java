@@ -29,8 +29,6 @@ public class LoginAction implements Action {
 		MemberDAO mDAO = new MemberDAO();
 		MemberVO mVO = new MemberVO();
 
-		BoardDAO bDAO = new BoardDAO();
-
 		mVO.setId(id);
 		mVO.setPassword(password);
 
@@ -39,7 +37,7 @@ public class LoginAction implements Action {
 		if (data == null) {
 			System.out.println("로그인 실패");
 
-			forward.setRedirect(false);
+			forward.setRedirect(true);
 			// 헤더를 교체하겠다.
 			// 이전 정보를 정리하겠다.
 			forward.setPath("index.jsp");
@@ -51,15 +49,10 @@ public class LoginAction implements Action {
 			HttpSession session = request.getSession();
 			session.setAttribute("mid", mVO.getId());
 			System.out.println("1");
-			
-			ArrayList<BoardVO> datas = bDAO.getBoardList();
-			
-			System.out.println("2");
-			request.setAttribute("datas", datas);
-			
+
 			System.out.println("3");
-			forward.setRedirect(false);
-			forward.setPath("board.jsp");
+			forward.setRedirect(true);
+			forward.setPath("board.do");
 
 		}
 

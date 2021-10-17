@@ -32,11 +32,11 @@ public class JoinAction implements Action {
 			System.out.println("회원가입 성공");
 
 			forward.setRedirect(false);
-			forward.setPath("main.jsp");
+			forward.setPath("login.jsp");
 		} else {
 			System.out.println("회원가입 실패");
 			forward.setRedirect(false);
-			forward.setPath("main.jsp");
+			forward.setPath("login.jsp");
 
 		}
 

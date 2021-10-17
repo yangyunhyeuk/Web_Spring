@@ -9,9 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import controller.action.ActionForward;
+import controller.action.BoardAction;
 import controller.action.JoinAction;
 import controller.action.LoginAction;
 import controller.action.MainAction;
+import controller.action.PostAction;
+import controller.action.WriteAction;
 
 public class DispatcherServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -35,16 +38,29 @@ public class DispatcherServlet extends HttpServlet {
 		System.out.println(action);
 		if (action.equals("/login.do")) {
 			forward = new LoginAction().execute(request, response);
-		} else if (action.equals("/logout.do")) {
+		} 
+		/*
+		else if (action.equals("/logout.do")) {
 
-		} else if (action.equals("/main.do")) {
+		} */
+		else if (action.equals("/main.do")) {
 			forward = new MainAction().execute(request, response);
-		}else if (action.equals("/join.do")) {
-			forward = new JoinAction().execute(request, response);
-		}else if (action.equals("/write.do")) {
-			forward = new WriteAtion().execute(request, response);
 		}
-
+		else if (action.equals("/board.do")) {
+			forward = new BoardAction().execute(request, response);
+		}
+	
+		else if (action.equals("/join.do")) {
+			forward = new JoinAction().execute(request, response);
+		}
+		
+		else if (action.equals("/write.do")) {
+			forward = new WriteAction().execute(request, response);
+		}
+		
+		else if (action.equals("/post.do")) {
+			forward = new PostAction().execute(request, response);
+		}
 		else {
 			// 1. 무조건 index.jsp로 이동
 			// 2. 에러 페이지로 이동
